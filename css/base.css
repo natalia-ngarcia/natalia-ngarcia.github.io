@@ -1,71 +1,165 @@
-body {
-    background-color: #757575;
-    font-family: georgia;
-    font-size: 16px;
-    line-height: 22px;
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:700,400);
+
+* { 
+    margin:0;
+    padding:0;
 }
 
-nav { 
+body { 
+    font-family: 'Droid Sans', 'sans-serif';
+    font-size: 12px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+nav {
     float: left;
-    width: 30%;
+    padding: 50px;
+    font-size: 14px;
 }
 
-#content {
-    border: 4px solid #000000;
-    background-color: #ffffff;
-    margin-left: 35%;
-    margin-right:
-    width: 65%;
+nav a {
+    border-bottom: 3px solid #ffffff;
+    color: #000;
+    display: inline-block;
+    font: 18px/32px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border-bottom: 4px solid #FF7FB9;
 }
 
 header {
-    background-color:#ffffff;
-    color:#000000;
-    height: 100px;
-    border: 4px solid #000000;
-    margin-bottom: 10px;
+	width: 950px;
+	margin-top:10px;
+	margin-right:50px;
+	margin-bottom:10px;
+	margin-left:50px;
 }
 
 h1 {
     color: #8d5fe8; 
-    font-family: times new roman; 
+    font-family: 'Amatic SC', 'cursive'; 
     font-size: 42px;
     font-weight: 500;
     padding: 10px;
 }
 
 h2 {
-    color: #FFBDFD;
-    font-family: helvetica, arial, sans-serif; 
-    font-size: 22px;
+    color: #8d5fe8;
+    font-family: 'Droid Sans', 'sans-serif';
+    font-size: 20px;
     font-weight: 500;
     padding: 10px;
+}
+
+h2 a:visited {
+    color: #FF7FB9;
+}
+
+h2 a:active {
+    color: #8d5fe8;
+}
+
+h2 a:hover {
+    border-bottom: 1px solid #FF7FB9;
 }
 
 h3 {
     color: #000000;
-    font-family: helvetica, arial, sans-serif; 
-    font-size: 22px;
+    font-family: 'Droid Sans', 'sans-serif';
+    font-size: 16px;
     font-weight: 500;
-    padding: 10px;
+    padding: 10px;   
+}
+
+h4 {
+    color: #919191;
+    font-style: italic;
+    font-family: 'Droid Sans', 'sans-serif';
+    padding: 10px;   
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 960px;
+}
+
+figure {
+    margin-top:10px;
+	margin-right:50px;
+	margin-bottom:10px;
+	margin-left:50px;
+}
     
+.about {
+    margin: 0;
+    width: 760px;
+	background-color: #ffffff;
 }
 
-header a:link {
-    color:#000000;
-}
-header a:visited {}
-header a:active {}
-header a:hover {
-    color:#000000;
+.about img {
+    float: right;
+    margin-top:10px;
+	margin-right:50px;
+	margin-bottom:10px;
+	margin-left:10px;
 }
 
-img
+.portfolio {
+    margin: 0;
+    width: 760px;
+	background-color: #ffffff;
+}
 
+.portfolio img { 
+    height: 250px;
+    width: 250px;
+}
+
+.resume {
+    margin: 0;
+    width: 560px;
+	background-color: #ffffff;
+}
+
+.interests {
+    margin: 0;
+    width: 960px;
+	background-color: #ffffff;
+}
+
+.contact {
+    margin: 0;
+    width: 760px;
+    text-align: center;
+	background-color: #ffffff;
+}
+
+section	{
+	margin-left:200px;
+}
 
 footer {
-    clear: both;
-    font-size: 12px;
-    text-align: center;
-    padding: 0 10px 0 10px;
+	height: 150px;
+    width: 960px;
+	background-color: #ffffff;
+    font-size: 10px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+@media (max-width: 690px) {
+    
+    .banner {
+        padding: 0;
+        text-align: left;
+    }
+
+
 }
